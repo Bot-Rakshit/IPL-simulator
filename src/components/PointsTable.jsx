@@ -42,9 +42,9 @@ const PointsTable = ({ teams, fixtures }) => {
         </button>
       </div>
 
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto max-h-[calc(100vh-140px)] md:overflow-y-auto">
         <table className="w-full text-sm">
-          <thead className="bg-gray-50 text-gray-700">
+          <thead className="bg-gray-50 text-gray-700 sticky top-0 z-10">
             <tr>
               {/* Position column - always visible */}
               <th className="px-2 sm:px-4 py-2 sm:py-3 text-left">#</th>
@@ -212,7 +212,7 @@ const PointsTable = ({ teams, fixtures }) => {
         </table>
       </div>
 
-      <div className="px-4 py-3 bg-gray-50 border-t border-gray-200 text-xs text-gray-500">
+      <div className="px-4 py-3 bg-gray-50 border-t border-gray-200 text-xs text-gray-500 sticky bottom-0">
         <div className="flex items-center">
           <div className="w-3 h-3 bg-green-100 rounded-full mr-1"></div>
           <span>Playoff qualification</span>

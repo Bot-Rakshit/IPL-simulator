@@ -59,7 +59,7 @@ const FixturesList = ({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+    <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 md:max-h-[calc(100vh-100px)] md:flex md:flex-col">
       <div className="bg-gradient-to-r from-primary to-[#092D5D] px-4 py-3">
         <h2 className="text-white font-semibold text-lg">Remaining Fixtures</h2>
         <p className="text-white/70 text-xs">
@@ -67,7 +67,7 @@ const FixturesList = ({
         </p>
       </div>
 
-      <div className="divide-y divide-gray-100">
+      <div className="divide-y divide-gray-100 md:overflow-y-auto">
         {fixtures.map((fixture) => {
           const team1 = getTeamById(fixture.team1.id);
           const team2 = getTeamById(fixture.team2.id);

@@ -432,7 +432,7 @@ function App() {
         allCompleted={fixtures.every((fixture) => fixture.completed)} // Pass current status
       />
 
-      <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 max-w-7xl">
+      <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 max-w-7xl min-h-[calc(100vh-80px)]">
         <div className="mb-4 flex flex-col sm:flex-row sm:justify-end sm:items-center gap-3">
           {/* View Final Results button - ALWAYS visible */}
           <motion.button
@@ -553,8 +553,10 @@ function App() {
               closeMatchSimulator={closeMatchSimulator}
             />
           </div>
-          <div className="md:col-span-4 order-1 md:order-2">
-            <PointsTable teams={rankedTeams} fixtures={fixtures} />
+          <div className="md:col-span-4 order-1 md:order-2 relative">
+            <div className="sticky top-[84px]">
+              <PointsTable teams={rankedTeams} fixtures={fixtures} />
+            </div>
           </div>
         </div>
       </div>
