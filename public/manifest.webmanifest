@@ -1,0 +1,9 @@
+{
+  "name": "IPL Top 4 Simulator",
+  "short_name": "IPL Simulator",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0e4da4",
+  "icons": []
+}
